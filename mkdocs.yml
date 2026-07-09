@@ -1,7 +1,7 @@
 site_name: 算法学习笔记
 site_url: ""
 theme:
-  name: material          # 启用 Material 主题
+  name: materialx
   features:
     - announce.dismiss #呈现可标记为由用户读取的临时公告，可以包含一个用于取消当前公告的按钮
     # - navigation.instant
@@ -39,6 +39,8 @@ theme:
 plugins:
   - search #搜索配置
   - tags
+  - blog
+  #- document-dates
 markdown_extensions: #详见https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/ 和 https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/
   - abbr
   - attr_list
@@ -98,6 +100,6 @@ nav: # 导航栏菜单结构，层级与目录结构对应
   - 首页: index.md
   #- 博客:
   #  - test: test.md  #.md文件的相对路径
-  - 关于: about.md
-  - Blog:
+  - 博客:
     - blog/index.md
+  - 关于: about.md
