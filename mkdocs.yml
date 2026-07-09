@@ -1,0 +1,14 @@
+site_name: 算法学习笔记
+site_url: ""
+theme:
+  name: material
+  language: zh
+extra:
+  alternate:
+
+    # Switch to English
+    - name: English
+      link: <your-site>/en/
+      lang: en
+nav:                       # 导航栏菜单结构，层级与目录结构对应
+  - 首页: index.md
