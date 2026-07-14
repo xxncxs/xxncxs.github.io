@@ -29,3 +29,19 @@ p code, li code, td code, .arithmatex code {
     border-radius: 3px;
     font-weight: bold;
 }
+
+/* 只针对 note 类型的 Admonition 容器 */
+.md-typeset .admonition.note,
+.md-typeset details.note {
+  font-size: 1em;  /* 调整为你想要的大小 */
+  font-weight: bolder;
+  text-align: center;
+}
+
+/* (可选) 只针对 note 类型 Admonition 的标题 */
+.md-typeset .admonition.note > .admonition-title,
+.md-typeset details.note > summary {
+  font-size: 1em;  /* 标题字体大小，按需调整 */
+  font-weight: 400;
+  text-align: left;
+}
