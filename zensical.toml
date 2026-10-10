@@ -23,7 +23,9 @@ nav = [
   ]},
 ]
 
-# extra_css = ["stylesheets/extra.css"]
+extra_css = [
+  "stylesheets/extra.css"
+]
 # extra_javascript = ["javascripts/extra.js"]
 
 [project.theme]
@@ -67,7 +69,8 @@ logo = "lucide/smile"
 
 [project.theme.font]
 # text = "Inter"
-code = "Jetbrains Mono"
+# code = "Jetbrains Mono"
+font = false
 
 [[project.theme.palette]]
 media = "(prefers-color-scheme)"
