@@ -4,7 +4,7 @@ site_name = "茶壶的博客"
 # site_description = "Your project description"
 # site_author = "Your name"
 
-copyright = "Copyright &copy; 2026 xxncxs"
+copyright = "Copyright &copy; 2026 xxncxs; 本站所有原创文章采用 CC BY-NC-SA 4.0 国际许可协议进行许可，转载请注明出处。"
 
 # repo_url = "https://github.com/user/repo"
 # repo_name = "user/repo"
