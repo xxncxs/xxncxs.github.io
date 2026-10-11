@@ -1,5 +1,64 @@
-@import url('https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css');
+/* ============================================
+   字体加载
+   ============================================ */
+
+/* 1. 正文中文字体：霞鹜文楷（按需引入字重） */
+@import url('https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/lxgwwenkai-regular.css');
+@import url('https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/lxgwwenkai-bold.css');
+
+/* 2. 代码等宽字体：LXGW Bright Code（Regular 字重） */
+@import url('https://cdn.jsdelivr.net/npm/@joshuasu/lxgwbright-code-web@2.711.0/style.min.css');
+
+.md-typeset strong,
+.md-typeset b {
+    font-family: "LXGW WenKai", sans-serif !important;
+    font-weight: 700 !important;
+}
+
+/* ============================================
+   应用字体到主题变量
+   ============================================ */
+:root {
+    /* 正文：霞鹜文楷 */
+    --md-text-font: "LXGW WenKai", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+    /* 代码块等宽字体 */
+    --md-code-font: "LXGW Bright Code", "LXGW WenKai", monospace;
+}
 
 :root {
-    --md-text-font: "LXGW WenKai", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-synthesis: weight style; /* 允许合成粗体和斜体 */
+}
+
+
+/* ============================================
+   数学块字体 —— 让 MathJax 也使用霞鹜文楷
+   ============================================ */
+mjx-container mjx-utext,
+mjx-container svg text {
+    font-family: "LXGW WenKai", serif !important;
+}
+
+mjx-container .mjx-char {
+    font-family: inherit !important;
+}
+
+
+/* ============================================
+   提示框（Admonition）字号继承正文
+   ============================================ */
+.md-typeset .admonition,
+.md-typeset details {
+    font-size: inherit !important;
+}
+
+.md-typeset .admonition-title,
+.md-typeset summary {
+    font-size: inherit !important;
+    font-weight: bold;
+}
+
+.md-typeset strong,
+.md-typeset b {
+    text-shadow: 0.5px 0 0 currentColor;
 }
